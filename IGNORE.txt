@@ -1,7 +1,11 @@
 # created by: svn propset svn:ignore -F ./IGNORE.TXT .
 
-plone.app.lockingbehavior.egg-info
-build
-dist
-*.pyc
+*.egg-info
 *.mo
+*.pyc
+.installed.cfg
+bin/
+build/
+buildout.cfg
+develop-eggs/
+dist/

@@ -2,6 +2,9 @@ from setuptools import setup, find_packages
 import os
 
 version = '1.0-dev'
+tests_require = [
+    'plone.app.testing',
+    ]
 
 setup(name='plone.app.lockingbehavior',
       version=version,
@@ -31,6 +34,8 @@ setup(name='plone.app.lockingbehavior',
         'plone.behavior',
         'plone.locking',
         ],
+      tests_require=tests_require,
+      extras_require=dict(tests=tests_require),
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
