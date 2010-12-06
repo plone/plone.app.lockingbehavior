@@ -3,3 +3,5 @@
 plone.app.lockingbehavior.egg-info
 build
 dist
+*.pyc
+*.mo
