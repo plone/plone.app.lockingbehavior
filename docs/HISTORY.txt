@@ -5,5 +5,10 @@ Changelog
 1.0 (unreleased)
 ----------------
 
+* Fixed problem which caused widget traversal to fail.
+  The edit form is now protected for non-anonymous user, since locking for
+  anyonmous users does not work anyway.
+  [jbaumann]
+
 * Initial implementation
   [jbaumann]
