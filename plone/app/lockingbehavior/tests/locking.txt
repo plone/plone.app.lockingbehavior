@@ -131,3 +131,15 @@ It should not be locked for foo now:
     >>> foo_browser.open('http://nohost/plone/lockabletype')
     >>> 'This item was locked' in foo_browser.contents
     False
+
+If we edit a content without chanig anything, the lock should also be
+released:
+
+    >>> bar_browser.open('http://nohost/plone/lockabletype/edit')
+    >>> foo_browser.open('http://nohost/plone/lockabletype')
+    >>> 'This item was locked' in foo_browser.contents
+    True
+    >>> bar_browser.getControl('Save').click()
+    >>> foo_browser.open('http://nohost/plone/lockabletype')
+    >>> 'This item was locked' in foo_browser.contents
+    False

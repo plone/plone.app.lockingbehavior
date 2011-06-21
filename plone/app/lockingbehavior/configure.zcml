@@ -36,7 +36,7 @@
 
     <subscriber
           for="plone.locking.interfaces.ITTWLockable
-               zope.lifecycleevent.interfaces.IObjectModifiedEvent"
+               plone.dexterity.interfaces.IEditFinishedEvent"
           handler="plone.locking.events.unlockAfterModification"
           />
 
