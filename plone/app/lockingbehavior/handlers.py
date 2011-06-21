@@ -8,7 +8,7 @@ def protect_edit_form(obj, event):
     the view of the object, where the lockinfo viewlet usually is.
     """
 
-    # Since locking does not working for anonymous users, we disable the
+    # Since locking does not work for anonymous users, so we disable the
     # redirect for them. This also makes widget traversal work, since the
     # widget traversal is always anonymous.
     nobody = AccessControl.SecurityManagement.SpecialUsers.nobody
