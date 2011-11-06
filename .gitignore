@@ -1,5 +1,3 @@
-# created by: svn propset svn:ignore -F ./IGNORE.TXT .
-
 *.egg-info
 *.mo
 *.pyc
