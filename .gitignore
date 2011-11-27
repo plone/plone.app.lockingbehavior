@@ -8,5 +8,6 @@ build/
 buildout.cfg
 develop-eggs/
 dist/
+eggs/
 parts/
 src/
