@@ -35,7 +35,7 @@ setup(name='plone.app.lockingbehavior',
       install_requires=[
         'setuptools',
         'plone.behavior',
-        'plone.dexterity>1.1',
+        'plone.dexterity>=1.1',
         'plone.locking',
         ],
       tests_require=tests_require,

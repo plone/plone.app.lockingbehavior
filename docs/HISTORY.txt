@@ -5,7 +5,8 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- Fix version requirement of plone.dexterity: 1.1 is compatible.
+  [jone]
 
 
 1.0 (2011-11-27)
