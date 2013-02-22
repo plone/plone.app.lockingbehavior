@@ -5,7 +5,9 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- Nothing changed yet.
+- If the content is locked, the redirect points to the default view and 
+  not to the absolute_url of the object. It avoids image opening on redirect
+  [parruc]
 
 
 1.0.1 (2011-12-06)

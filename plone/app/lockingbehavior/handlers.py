@@ -19,4 +19,8 @@ def protect_edit_form(obj, event):
                                 name="plone_lock_info")
 
     if info.is_locked_for_current_user():
-        raise Redirect(obj.absolute_url())
+        default_view = obj.defaultView()
+        url = obj.absolute_url()
+        if default_view:
+            url = '/'.join((url, "@@" + default_view))
+        raise Redirect(url)
