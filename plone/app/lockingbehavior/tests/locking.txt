@@ -91,7 +91,7 @@ When bar tries to access /edit directly, he will be redirected back:
     >>> bar_browser.open('http://nohost/plone/lockabletype/edit')
     Traceback (most recent call last):
     ...
-    Redirect: http://nohost/plone/lockabletype
+    Redirect: http://nohost/plone/lockabletype/@@view
 
 New let foo save the object:
 
