@@ -13,7 +13,6 @@
           title="Locking"
           description="Locking support for dexterity"
           provides="plone.app.lockingbehavior.behaviors.ILocking"
-          for="plone.dexterity.interfaces.IDexterityContent"
           />
 
     <subscriber
