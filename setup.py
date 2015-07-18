@@ -10,7 +10,7 @@ setup(name='plone.app.lockingbehavior',
       version=version,
       description="Locking integration for dexterity content objects.",
       long_description=open("README.rst").read() + "\n" + \
-          open(os.path.join("docs", "HISTORY.txt")).read(),
+          open("CHANGES.rst").read(),
 
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
