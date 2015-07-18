@@ -5,7 +5,13 @@ Changelog
 1.1 (unreleased)
 ----------------
 
-- If the content is locked, the redirect points to the default view and 
+- Remove superfluous 'for'.
+  [fulv]
+
+- Fix tests: redirect was changed in commit e7367258.
+  [jone]
+
+- If the content is locked, the redirect points to the default view and
   not to the absolute_url of the object. It avoids image opening on redirect
   [parruc]
 
