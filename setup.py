@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-import os
 
 version = '1.0.2.dev0'
 tests_require = [
@@ -9,17 +8,17 @@ tests_require = [
 setup(name='plone.app.lockingbehavior',
       version=version,
       description="Locking integration for dexterity content objects.",
-      long_description=open("README.rst").read() + "\n" + \
-          open("CHANGES.rst").read(),
+      long_description=(open("README.rst").read() + "\n" +
+                        open("CHANGES.rst").read()),
 
       # Get more strings from
       # http://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
-        "Framework :: Plone",
-        "Framework :: Zope2",
-        "Programming Language :: Python",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        ],
+          "Framework :: Plone",
+          "Framework :: Zope2",
+          "Programming Language :: Python",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          ],
 
       keywords='dexterity locking behavior plone',
       author='Plone Foundation',
@@ -33,11 +32,11 @@ setup(name='plone.app.lockingbehavior',
       zip_safe=False,
 
       install_requires=[
-        'setuptools',
-        'plone.behavior',
-        'plone.dexterity>=1.1',
-        'plone.locking',
-        ],
+          'setuptools',
+          'plone.behavior',
+          'plone.dexterity>=1.1',
+          'plone.locking',
+          ],
       tests_require=tests_require,
       extras_require=dict(tests=tests_require),
 
