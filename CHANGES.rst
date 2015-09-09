@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0.2 (unreleased)
+1.0.2 (2015-09-09)
 ------------------
 
 - Remove superfluous 'for'.
