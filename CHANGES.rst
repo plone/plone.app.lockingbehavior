@@ -10,7 +10,8 @@ New:
 
 Fixes:
 
-- *add item here*
+- Changed i18n_domain to "plone"
+  [claytonc]
 
 
 1.0.2 (2015-09-09)
