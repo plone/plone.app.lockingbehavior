@@ -49,7 +49,7 @@ class TestLockingBehavior(unittest.TestCase):
 
     @unittest.skipIf(has_zope4, 'Test-isolation issues with Zope4')
     def test_lockablebehavior(self):
-        # add a lockable item
+        # Add a lockable item
         self.portal.invokeFactory(
             'LockableType', id='lockabletype', title='Lockable Type')
         obj = self.portal['lockabletype']
@@ -65,7 +65,7 @@ class TestLockingBehavior(unittest.TestCase):
         self.bar_browser.open(obj.absolute_url())
         self.assertIn('This item was locked', self.bar_browser.contents)
 
-        # Clicking Edit will redirect to view for USer2
+        # Clicking Edit will redirect to view for User2
         self.bar_browser.getLink('Edit').click()
         self.assertEqual(
             self.bar_browser.url, 'http://nohost/plone/lockabletype/@@view')
