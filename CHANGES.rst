@@ -10,6 +10,9 @@ New:
 
 Fixes:
 
+- Refactor doctest to an integration test and skip it for Zope 4 due to isolation problems.
+  [pbauer]
+
 - Changed i18n_domain to "plone"
   [claytonc]
 

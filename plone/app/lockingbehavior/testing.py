@@ -2,7 +2,6 @@ from plone.app.testing import PloneSandboxLayer
 from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import FunctionalTesting
-from zope.configuration import xmlconfig
 
 
 class LockingLayer(PloneSandboxLayer):
@@ -12,11 +11,7 @@ class LockingLayer(PloneSandboxLayer):
     def setUpZope(self, app, configurationContext):
         # Load ZCML
         import plone.app.lockingbehavior
-        xmlconfig.file('configure.zcml', plone.app.lockingbehavior,
-                       context=configurationContext)
-
-    def setUpPloneSite(self, portal):
-        pass
+        self.loadZCML(package=plone.app.lockingbehavior)
 
 
 LOCKING_FIXTURE = LockingLayer()
