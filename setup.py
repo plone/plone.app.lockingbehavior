@@ -12,7 +12,7 @@ setup(name='plone.app.lockingbehavior',
                         open("CHANGES.rst").read()),
 
       # Get more strings from
-      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      # https://pypi.python.org/pypi?%3Aaction=list_classifiers
       classifiers=[
           "Framework :: Plone",
           "Framework :: Plone :: 4.3",
