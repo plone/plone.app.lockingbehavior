@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import unittest
 from pkg_resources import get_distribution
-from plone.app.lockingbehavior.testing import LOCKING_INTEGRATION_TESTING
+from plone.app.lockingbehavior.testing import LOCKING_FUNCTIONAL_TESTING
 from plone.app.testing import SITE_OWNER_NAME
 from plone.app.testing import SITE_OWNER_PASSWORD
 from plone.app.testing import TEST_USER_NAME
@@ -17,7 +17,7 @@ has_zope4 = get_distribution('Zope2').version.startswith('4')
 
 class TestLockingBehavior(unittest.TestCase):
 
-    layer = LOCKING_INTEGRATION_TESTING
+    layer = LOCKING_FUNCTIONAL_TESTING
 
     def setUp(self):
         # add IShortName behavior to Page
