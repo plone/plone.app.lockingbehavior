@@ -4,10 +4,6 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-New:
-
-- *add item here*
-
 Fixes:
 
 - Refactor doctest to an integration test and skip it for Zope 4 due to isolation problems.
