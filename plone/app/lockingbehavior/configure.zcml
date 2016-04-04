@@ -10,6 +10,7 @@
     <include package="plone.locking" />
 
     <plone:behavior
+          name="plone.locking"
           title="Locking"
           description="Locking support for dexterity"
           provides="plone.app.lockingbehavior.behaviors.ILocking"
