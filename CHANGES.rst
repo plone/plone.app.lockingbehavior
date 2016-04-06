@@ -6,7 +6,8 @@ Changelog
 
 New:
 
-- *add item here*
+- Add behavior short name.
+  [jensens]
 
 Fixes:
 
