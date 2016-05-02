@@ -9,10 +9,6 @@ New:
 - Add behavior short name.
   [jensens]
 
-Fixes:
-
-- *add item here*
-
 
 1.0.3 (2016-02-20)
 ------------------
