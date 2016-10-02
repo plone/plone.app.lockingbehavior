@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import AccessControl
 from zExceptions import Redirect
 from zope.component import getMultiAdapter

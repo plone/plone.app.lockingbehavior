@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from plone.locking.interfaces import ITTWLockable
 
 
