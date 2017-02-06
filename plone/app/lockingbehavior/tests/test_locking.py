@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 import unittest
-from pkg_resources import get_distribution
 from plone.app.lockingbehavior.testing import LOCKING_FUNCTIONAL_TESTING
 from plone.app.testing import SITE_OWNER_NAME
 from plone.app.testing import SITE_OWNER_PASSWORD
@@ -11,8 +10,6 @@ from plone.app.testing import setRoles
 from plone.dexterity.fti import DexterityFTI
 from plone.testing import z2
 import transaction
-
-has_zope4 = get_distribution('Zope2').version.startswith('4')
 
 
 class TestLockingBehavior(unittest.TestCase):
@@ -47,7 +44,6 @@ class TestLockingBehavior(unittest.TestCase):
         )
         self.bar_browser.open('http://nohost/plone')
 
-    @unittest.skipIf(has_zope4, 'Test-isolation issues with Zope4')
     def test_lockablebehavior(self):
         # Add a lockable item
         self.portal.invokeFactory(

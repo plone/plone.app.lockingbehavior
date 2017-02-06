@@ -16,6 +16,9 @@ Bug fixes:
 
 - Add coding header on python files.
  [gforcada]
+- Unskip test for Zope 4, as isolation problems are already fixed.
+  [thet]
+
 
 1.0.4 (2016-05-02)
 ------------------
@@ -30,6 +33,9 @@ New:
 ------------------
 
 Fixes:
+
+- Use a functional layer to resolve test isolation problems.
+  [gforcada]
 
 - Refactor doctest to an integration test and skip it for Zope 4 due to isolation problems.
   [pbauer]
