@@ -23,7 +23,8 @@ Bug fixes:
 Bug fixes:
 
 - Add coding header on python files.
- [gforcada]
+  [gforcada]
+
 - Unskip test for Zope 4, as isolation problems are already fixed.
   [thet]
 
