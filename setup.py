@@ -33,7 +33,7 @@ setup(
     author_email='mailto:dexterity-development@googlegroups.com',
     url='https://github.com/plone/plone.app.lockingbehavior/',
     license='GPL version 2',
-    packages=find_packages(exclude=['ez_setup']),
+    packages=find_packages(),
     namespace_packages=['plone', 'plone.app'],
     include_package_data=True,
     zip_safe=False,
