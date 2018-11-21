@@ -3,4 +3,6 @@ recursive-include docs *
 include *.rst
 exclude .gitignore
 global-exclude *.pyc
-global-include *.mo
+global-include *.moinclude pyproject.toml
+recursive-exclude news *
+exclude news
