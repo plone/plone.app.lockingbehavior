@@ -8,6 +8,16 @@ Changelog
 
 .. towncrier release notes start
 
+1.0.6 (2018-11-21)
+------------------
+
+Bug fixes:
+
+
+- Cleanup project level files (setup.py, .travis-ci.yml...) [maurits]
+  [gforcada] (#2524)
+
+
 1.0.5 (2017-02-12)
 ------------------
 
