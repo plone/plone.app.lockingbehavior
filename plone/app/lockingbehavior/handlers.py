@@ -1,6 +1,7 @@
-import AccessControl
 from zExceptions import Redirect
 from zope.component import getMultiAdapter
+
+import AccessControl
 
 
 def protect_edit_form(obj, event):

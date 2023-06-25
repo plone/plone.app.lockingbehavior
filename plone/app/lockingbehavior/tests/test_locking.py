@@ -1,14 +1,15 @@
-import unittest
 from plone.app.lockingbehavior.testing import LOCKING_FUNCTIONAL_TESTING
+from plone.app.testing import setRoles
 from plone.app.testing import SITE_OWNER_NAME
 from plone.app.testing import SITE_OWNER_PASSWORD
-from plone.app.testing import TEST_USER_NAME
 from plone.app.testing import TEST_USER_ID
+from plone.app.testing import TEST_USER_NAME
 from plone.app.testing import TEST_USER_PASSWORD
-from plone.app.testing import setRoles
 from plone.dexterity.fti import DexterityFTI
 from plone.testing import z2
+
 import transaction
+import unittest
 
 
 class TestLockingBehavior(unittest.TestCase):
