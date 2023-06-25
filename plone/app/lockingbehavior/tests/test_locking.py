@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 import unittest
 from plone.app.lockingbehavior.testing import LOCKING_FUNCTIONAL_TESTING
 from plone.app.testing import SITE_OWNER_NAME
