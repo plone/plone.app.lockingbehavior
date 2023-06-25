@@ -11,6 +11,7 @@ long_description = (
 
 tests_require = [
     "plone.app.testing",
+    "plone.testing",
 ]
 
 setup(
@@ -48,7 +49,6 @@ setup(
     python_requires=">=3.8",
     install_requires=[
         "setuptools",
-        "plone.app.locales >= 4.3.9",
         "plone.behavior",
         "plone.dexterity>=1.1",
         "plone.locking",
