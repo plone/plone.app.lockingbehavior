@@ -2,18 +2,16 @@ from setuptools import find_packages
 from setuptools import setup
 
 
-version = '1.0.8.dev0'
+version = "1.0.8.dev0"
 tests_require = [
-    'plone.app.testing',
-    ]
+    "plone.app.testing",
+]
 
 setup(
-    name='plone.app.lockingbehavior',
+    name="plone.app.lockingbehavior",
     version=version,
     description="Locking integration for dexterity content objects.",
-    long_description=(open("README.rst").read() + "\n" +
-                      open("CHANGES.rst").read()),
-
+    long_description=(open("README.rst").read() + "\n" + open("CHANGES.rst").read()),
     # Get more strings from
     # https://pypi.org/classifiers/
     classifiers=[
@@ -34,23 +32,23 @@ setup(
         "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Topic :: Software Development :: Libraries :: Python Modules",
-        ],
-    keywords='dexterity locking behavior plone',
-    author='Plone Foundation',
-    author_email='mailto:dexterity-development@googlegroups.com',
-    url='https://github.com/plone/plone.app.lockingbehavior/',
-    license='GPL version 2',
+    ],
+    keywords="dexterity locking behavior plone",
+    author="Plone Foundation",
+    author_email="mailto:dexterity-development@googlegroups.com",
+    url="https://github.com/plone/plone.app.lockingbehavior/",
+    license="GPL version 2",
     packages=find_packages(),
-    namespace_packages=['plone', 'plone.app'],
+    namespace_packages=["plone", "plone.app"],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'setuptools',
-        'plone.app.locales >= 4.3.9',
-        'plone.behavior',
-        'plone.dexterity>=1.1',
-        'plone.locking',
-        ],
+        "setuptools",
+        "plone.app.locales >= 4.3.9",
+        "plone.behavior",
+        "plone.dexterity>=1.1",
+        "plone.locking",
+    ],
     tests_require=tests_require,
     extras_require=dict(tests=tests_require),
     entry_points="""
@@ -58,4 +56,4 @@ setup(
     [z3c.autoinclude.plugin]
     target = plone
     """,
-    )
+)
