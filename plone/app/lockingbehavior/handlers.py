@@ -1,7 +1,7 @@
-# -*- coding: utf-8 -*-
-import AccessControl
 from zExceptions import Redirect
 from zope.component import getMultiAdapter
+
+import AccessControl
 
 
 def protect_edit_form(obj, event):
@@ -16,12 +16,11 @@ def protect_edit_form(obj, event):
     if AccessControl.getSecurityManager().getUser() == nobody:
         return
 
-    info = getMultiAdapter((obj, obj.REQUEST),
-                                name="plone_lock_info")
+    info = getMultiAdapter((obj, obj.REQUEST), name="plone_lock_info")
 
     if info.is_locked_for_current_user():
         default_view = obj.defaultView()
         url = obj.absolute_url()
         if default_view:
-            url = '/'.join((url, "@@" + default_view))
+            url = "/".join((url, "@@" + default_view))
         raise Redirect(url)
