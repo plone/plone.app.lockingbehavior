@@ -42,4 +42,4 @@ from ``plone.app.layout`` is also working for the dexterity content type.
 More Information
 ----------------
 
-* http://pypi.python.org/pypi/plone.locking
+* https://pypi.org/project/plone.locking
