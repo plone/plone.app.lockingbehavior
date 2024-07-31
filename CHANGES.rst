@@ -8,6 +8,16 @@ Changelog
 
 .. towncrier release notes start
 
+2.0.1 (2024-07-31)
+------------------
+
+Bug fixes:
+
+
+- Remove setuptools fossils.
+  [maurits] (#72)
+
+
 2.0.0 (2023-10-07)
 ------------------
 
