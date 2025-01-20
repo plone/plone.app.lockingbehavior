@@ -6,7 +6,7 @@ from plone.app.testing import TEST_USER_ID
 from plone.app.testing import TEST_USER_NAME
 from plone.app.testing import TEST_USER_PASSWORD
 from plone.dexterity.fti import DexterityFTI
-from plone.testing import z2
+from plone.testing import zope
 
 import transaction
 import unittest
@@ -28,7 +28,7 @@ class TestLockingBehavior(unittest.TestCase):
         transaction.commit()
 
         # prepare two browsers
-        self.foo_browser = z2.Browser(self.layer["app"])
+        self.foo_browser = zope.Browser(self.layer["app"])
         self.foo_browser.addHeader(
             "Authorization",
             "Basic %s:%s"
@@ -39,7 +39,7 @@ class TestLockingBehavior(unittest.TestCase):
         )
         self.foo_browser.open("http://nohost/plone")
 
-        self.bar_browser = z2.Browser(self.layer["app"])
+        self.bar_browser = zope.Browser(self.layer["app"])
         self.bar_browser.addHeader(
             "Authorization",
             "Basic %s:%s"
