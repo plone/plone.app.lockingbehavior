@@ -12,6 +12,7 @@ long_description = (
 tests_require = [
     "plone.app.testing",
     "plone.testing",
+    "transaction",
 ]
 
 setup(
@@ -51,10 +52,13 @@ setup(
     zip_safe=False,
     python_requires=">=3.8",
     install_requires=[
+        "AccessControl",
         "setuptools",
         "plone.behavior",
         "plone.dexterity>=1.1",
         "plone.locking",
+        "zExceptions",
+        "zope.component",
     ],
     extras_require=dict(tests=tests_require),
     entry_points="""
