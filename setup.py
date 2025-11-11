@@ -46,7 +46,6 @@ setup(
     python_requires=">=3.10",
     install_requires=[
         "AccessControl",
-        "setuptools",
         "plone.behavior",
         "plone.dexterity>=1.1",
         "plone.locking",
